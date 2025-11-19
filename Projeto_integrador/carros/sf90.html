@@ -219,6 +219,102 @@
         footer a:hover {
             text-decoration: underline;
         }
+        /* ====== RESPONSIVIDADE ====== */
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+    header {
+        padding: 20px 30px;
+    }
+
+    .produto-container {
+        flex-direction: column;
+        max-width: 95%;
+    }
+
+    .galeria, .detalhes {
+        width: 100%;
+    }
+
+    .imagem-principal {
+        width: 100%;
+    }
+
+    .miniaturas img {
+        width: 70px;
+        height: 50px;
+    }
+
+    .detalhes {
+        padding: 25px;
+    }
+}
+
+/* Celulares (até 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .titulo {
+        font-size: 1.6em;
+    }
+
+    .preco {
+        font-size: 1.6em;
+    }
+
+    .botoes {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .botoes button {
+        width: 100%;
+    }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .imagem-principal {
+        width: 100%;
+    }
+
+    .miniaturas {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .miniaturas img {
+        width: 65px;
+        height: 45px;
+    }
+
+    .descricao {
+        font-size: 0.9em;
+    }
+
+    .detalhes {
+        padding: 20px;
+    }
+}
+
     </style>
 </head>
 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro de Luxo - LuxCar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../CSS/sf90.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>LuxCar</h1>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\nicolas.2902\OneDrive - Senac PR\Documentos\Projeto_integrador1°ano\index.html">Início</a></li>
+                <li><a href="../HTML/categorias.html">Categorias</a></li>
+                <li><a href="../HTML/perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="produto-container">
+            <div class="galeria">
+                <img id="imagem-principal" src="../img/90.jpg"
+                    alt="Ferrari SF90 Stradale" class="imagem-principal">
+                <div class="miniaturas">
+                    <img src="../img/90.jpg" alt="Imagem 1" onclick="trocarImagem(this)">
+                    <img src="../img/91.jpg" alt="Imagem 2" onclick="trocarImagem(this)">
+                    <img src="../img/93.jpg" alt="Imagem 3" onclick="trocarImagem(this)">
+                    <img src="../img/94.jpg" alt="Imagem 4" onclick="trocarImagem(this)">
+                    <img src="../img/96.jpg" alt="Imagem 5" onclick="trocarImagem(this)">
+                    <img src="../img/95.jpg" alt="Imagem 6" onclick="trocarImagem(this)">
+                </div>
+            </div>
+
+            <div class="detalhes">
+                <div>
+                    <h1 class="titulo">Ferrari SF90 Stradale</h1>
+                    <p class="descricao">
+                        <strong>A Ferrari SF90 Stradale</strong> é um supercarro híbrido plug-in que redefine o desempenho e a inovação da marca italiana.
+                        Equipada com um motor V8 biturbo de 4.0 litros e três motores elétricos, entrega uma potência combinada impressionante
+                        de <strong>1.000 cavalos</strong>. A SF90 acelera de 0 a 100 km/h em apenas <strong>2,5 segundos</strong> e atinge uma velocidade máxima
+                        de 340 km/h. Seu sistema híbrido permite rodar até 25 km apenas no modo elétrico, enquanto o design aerodinâmico e o interior luxuoso
+                        refletem o equilíbrio perfeito entre tecnologia, potência e exclusividade.
+                    </p>
+
+                    <p class="preco">R$ 4.200.000,00</p>
+
+                    <div class="especificacoes">
+                        <li>Motor: 4.0 V8 biturbo + 3 motores elétricos</li>
+                        <li>Potência combinada: 1.000 cv</li>
+                        <li>Aceleração (0–100 km/h): 2,5 segundos</li>
+                        <li>Velocidade máxima: 340 km/h</li>
+                        <li>Tração: Integral (AWD)</li>
+                        <li>Transmissão: Automática de 8 marchas</li>
+                        <li>Autonomia elétrica: até 25 km</li>
+                    </div>
+                </div>
+
+                <div class="botoes">
+                    <button onclick="window.location.href='../HTML/Compra.html'" class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 LuxCar. Todos os direitos reservados.</p>
+        <p>Feito por Gustavo Satoshi & Nicolas Lucatelli</p>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-tiktok"></i>
+        <i class="bi bi-facebook"></i>
+    </footer>
+
+    <script src="../JavaScript/sf90.js"></script>
+</body>
+</html>

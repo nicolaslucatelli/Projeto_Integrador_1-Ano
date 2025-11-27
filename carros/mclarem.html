@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro de Luxo - LuxCar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../CSS/mclarem.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+    <!-- ======= CABEÇALHO ======= -->
+    <header>
+        <h1>LuxCar</h1>
+        <nav>
+             <ul>
+                <li><a href="C:\Users\nicolas.2902\OneDrive - Senac PR\Documentos\Projeto_integrador1°ano\index.html">Início</a></li>
+                <li><a href="../HTML/categorias.html">Categorias</a></li>
+                <li><a href="../HTML/perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ======= CONTEÚDO PRINCIPAL ======= -->
+    <main>
+        <div class="produto-container">
+            <!-- Galeria -->
+            <div class="galeria">
+                <img id="imagem-principal" src="../img/m2.webp"
+                    alt="McLaren 570S" class="imagem-principal">
+                <div class="miniaturas">
+                    <img src="../img/m1.webp" alt="Imagem 1" onclick="trocarImagem(this)">
+                    <img src="../img/m2.webp" alt="Imagem 2" onclick="trocarImagem(this)">
+                    <img src="../img/m3.webp" alt="Imagem 3" onclick="trocarImagem(this)">
+                    <img src="../img/m4.webp" alt="Imagem 4" onclick="trocarImagem(this)">
+                    <img src="../img/m5.webp" alt="Imagem 5" onclick="trocarImagem(this)">
+                    <img src="../img/m6.webp" alt="Imagem 6" onclick="trocarImagem(this)">
+                </div>
+            </div>
+
+            <!-- Detalhes -->
+            <div class="detalhes">
+                <div>
+                    <h1 class="titulo">McLaren 570S</h1>
+                    <p class="descricao">
+                        <strong>O McLaren 570S</strong> é um supercarro britânico que combina leveza, precisão e potência 
+                        em um design arrojado e inconfundível. Equipado com um motor V8 biturbo de 3.8 litros capaz de gerar 
+                        570 cavalos de potência, ele acelera de 0 a 100 km/h em apenas 3,2 segundos e atinge uma velocidade máxima 
+                        de 328 km/h. Sua carroceria em fibra de carbono garante rigidez e baixo peso, enquanto o interior esportivo 
+                        entrega luxo e tecnologia, com acabamentos premium e ergonomia voltada para a performance.
+                    </p>
+
+                    <p class="preco">R$ 1.590.000,00</p>
+
+                    <div class="especificacoes">
+                        <li>Motor: 3.8 V8 biturbo</li>
+                        <li>Aceleração (0-100 km/h): 3,2 segundos</li>
+                        <li>Velocidade máxima: 328 km/h</li>
+                        <li>Tração: Traseira (RWD)</li>
+                        <li>Transmissão: Automática de 7 marchas</li>
+                        <li>Potência: 570 cavalos</li>
+                    </div>
+                </div>
+
+                <div class="botoes">
+                    <button onclick="window.location.href='../HTML/Compra.html'" class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ======= RODAPÉ ======= -->
+    <footer>
+        <p>&copy; 2025 LuxCar. Todos os direitos reservados.</p>
+        <p>Feito por Gustavo Satoshi & Nicolas Lucatelli</p>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-tiktok"></i>
+        <i class="bi bi-facebook"></i>
+    </footer>
+
+    <script src="../JavaScript/mclarem.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro de Luxo - LuxCar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../CSS/maserati.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>LuxCar</h1>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\nicolas.2902\OneDrive - Senac PR\Documentos\Projeto_integrador1°ano\index.html">Início</a></li>
+                <li><a href="../HTML/categorias.html">Categorias</a></li>
+                <li><a href="../HTML/perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="produto-container">
+            <div class="galeria">
+                <img id="imagem-principal" src="../img/,m.jpg" alt="Maserati Levante" class="imagem-principal">
+                <div class="miniaturas">
+                    <img src="../img/,m.jpg" alt="Imagem 1" onclick="trocarImagem(this)">
+                    <img src="../img/,m1.jpg" alt="Imagem 2" onclick="trocarImagem(this)">
+                    <img src="../img/,m4.jpg" alt="Imagem 3" onclick="trocarImagem(this)">
+                    <img src="../img/,m5.jpg" alt="Imagem 4" onclick="trocarImagem(this)">
+                    <img src="../img/,m6.jpg" alt="Imagem 5" onclick="trocarImagem(this)">
+                </div>
+            </div>
+
+            <div class="detalhes">
+                <div>
+                    <h1 class="titulo">Maserati Levante</h1>
+                    <p class="descricao">
+                        <strong>O Maserati Levante</strong> é o SUV de luxo da marca italiana que une elegância, desempenho e conforto. 
+                        Equipado com um motor V6 biturbo de 3.0 litros, o Levante combina força e sofisticação, entregando até 430 cavalos 
+                        e uma experiência de condução marcante. Seu interior é refinado, com couro premium, detalhes em madeira e 
+                        tecnologia de ponta. Com tração integral inteligente e modos de condução ajustáveis, o Levante oferece 
+                        desempenho excepcional tanto nas estradas quanto fora delas, mantendo o padrão de luxo característico da Maserati.
+                    </p>
+
+                    <p class="preco">R$ 1.150.000,00</p>
+
+                    <div class="especificacoes">
+                        <li>Motor: 3.0 V6 biturbo</li>
+                        <li>Aceleração (0-100 km/h): 5,2 segundos</li>
+                        <li>Velocidade máxima: 264 km/h</li>
+                        <li>Tração: Integral (AWD)</li>
+                        <li>Transmissão: Automática de 8 marchas</li>
+                        <li>Potência: 430 cavalos</li>
+                    </div>
+                </div>
+
+                <div class="botoes">
+                    <button onclick="window.location.href='../HTML/Compra.html'" class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 LuxCar. Todos os direitos reservados.</p>
+        <p>Feito por Gustavo Satoshi & Nicolas Lucatelli</p>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-tiktok"></i>
+        <i class="bi bi-facebook"></i>
+    </footer>
+
+    <script src="../JavaScript/maserati.js"></script>
+</body>
+
+</html>

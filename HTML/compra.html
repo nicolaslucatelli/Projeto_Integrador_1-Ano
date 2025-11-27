@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalizar Compra</title>
+  <link rel="stylesheet" href="../CSS/compra.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Finalizar Compra</h1>
+
+    <form id="checkoutForm">
+      <div class="campo">
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" required>
+      </div>
+
+      <div class="campo">
+        <label for="cpf">CPF</label>
+        <input type="text" id="cpf" placeholder="000.000.000-00" required>
+      </div>
+
+      <div class="campo">
+        <label for="endereco">Endereço</label>
+        <input type="text" id="endereco" placeholder="Rua, número, bairro" required>
+      </div>
+
+      <div class="campo-duplo">
+        <div>
+          <label for="cidade">Cidade</label>
+          <input type="text" id="cidade" required>
+        </div>
+        <div>
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" placeholder="00000-000" required>
+        </div>
+      </div>
+
+      <div class="campo">
+        <label>Forma de Pagamento</label>
+        <div class="metodo-pagamento">
+          <label><input type="radio" name="pagamento" value="Cartão de Crédito" required> Cartão</label>
+          <label><input type="radio" name="pagamento" value="Pix"> Pix</label>
+          <label><input type="radio" name="pagamento" value="Boleto"> Boleto</label>
+        </div>
+      </div>
+
+      <div class="campo">
+        <label for="obs">Observações</label>
+        <textarea id="obs" rows="3" placeholder="Ex: entregar após as 14h..."></textarea>
+      </div>
+
+      <button type="submit" class="botao">Finalizar Pedido</button>
+    </form>
+
+    <div id="mensagem-sucesso" class="mensagem-sucesso">
+      Compra efetuada com sucesso 
+      <span>Obrigado por comprar conosco.</span>
+    </div>
+
+    <div class="resumo">
+      <h2>Resumo do Pedido</h2>
+      <div class="resumo-item"><span>Produto Exemplo</span><span>R$ 3.799.000,00</span></div>
+      <div class="resumo-item"><span>Frete</span><span>R$ 1000,00</span></div>
+      <div class="resumo-item total"><span>Total</span><span>R$ 3.800.000,00</span></div>
+    </div>
+  </div>
+
+  <script src="../JavaScript/compra.js"></script>
+</body>
+</html>
+''

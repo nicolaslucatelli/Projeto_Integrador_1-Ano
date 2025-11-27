@@ -1,0 +1,303 @@
+@media (max-width: 1024px) {
+    header {
+        padding: 20px 30px;
+    }
+
+    .produto-container {
+        flex-direction: column;
+        max-width: 95%;
+    }
+
+    .galeria, .detalhes {
+        width: 100%;
+    }
+
+    .imagem-principal {
+        width: 100%;
+    }
+
+    .miniaturas img {
+        width: 70px;
+        height: 50px;
+    }
+
+    .detalhes {
+        padding: 25px;
+    }
+}
+
+/* Celulares (até 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .titulo {
+        font-size: 1.6em;
+    }
+
+    .preco {
+        font-size: 1.6em;
+    }
+
+    .botoes {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .botoes button {
+        width: 100%;
+    }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .imagem-principal {
+        width: 100%;
+    }
+
+    .miniaturas {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .miniaturas img {
+        width: 65px;
+        height: 45px;
+    }
+
+    .descricao {
+        font-size: 0.9em;
+    }
+
+    .detalhes {
+        padding: 20px;
+    }
+}
+
+        :root {
+            --dourado: #e5b80b;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #111;
+            color: #fff;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000;
+            padding: 20px 50px;
+            border-bottom: 2px solid var(--dourado);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 1.8em;
+            color: var(--dourado);
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 1px;
+            user-select: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--dourado);
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 0;
+        }
+
+        .produto-container {
+            display: flex;
+            background-color: #1a1a1a;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            max-width: 1100px;
+            width: 90%;
+        }
+
+        .galeria {
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            background-color: #000;
+        }
+
+        .imagem-principal {
+            width: 110%;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            transition: transform 0.3s;
+        }
+
+        .imagem-principal:hover {
+            transform: scale(1.03);
+        }
+
+        .miniaturas {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .miniaturas img {
+            width: 90px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border-color 0.3s, transform 0.2s;
+        }
+
+        .miniaturas img:hover {
+            border-color: var(--dourado);
+            transform: scale(1.05);
+        }
+
+        .detalhes {
+            width: 45%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .titulo {
+            font-size: 2em;
+            font-weight: 600;
+            color: var(--dourado);
+            margin-bottom: 10px;
+        }
+
+        .descricao {
+            color: #ccc;
+            font-size: 1em;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        .preco {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: var(--dourado);
+            margin-bottom: 20px;
+        }
+
+        .especificacoes {
+            margin-bottom: 30px;
+        }
+
+        .especificacoes li {
+            margin: 8px 0;
+            font-size: 0.95em;
+            color: #bbb;
+        }
+
+        .botoes {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn-comprar {
+            background-color: var(--dourado);
+            color: #000;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .btn-comprar:hover {
+            background-color: #f0c518;
+        }
+
+        .btn-reservar {
+            background-color: transparent;
+            border: 2px solid var(--dourado);
+            color: var(--dourado);
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-reservar:hover {
+            background-color: var(--dourado);
+            color: #000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 24px 12px;
+            background-color: #000;
+            color: var(--dourado);
+            font-weight: 600;
+            user-select: none;
+            border-top: 2px solid var(--dourado);
+            margin-top: auto;
+        }
+
+        footer a {
+            color: #f0c518;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }

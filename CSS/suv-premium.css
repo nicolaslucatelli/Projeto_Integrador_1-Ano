@@ -1,0 +1,85 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: white;
+  background-color: #000;
+  height: 100%;
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px; /* espaço para o header fixo */
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex: 1;
+}
+
+.car {
+  flex: 1;
+  position: relative;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(65%);
+  transition: flex 0.6s ease-in-out, filter 0.5s ease;
+}
+
+.car:hover {
+  flex: 2;
+  filter: brightness(100%);
+}
+
+.overlay {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  background: rgba(0,0,0,0.6);
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #d4af37;
+  text-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+
+/* ===== IMAGENS DOS CARROS ===== */
+.range { background-image: url(../img/n1.jpg);}
+.maserati { background-image: url(../img/\,m.jpg);}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 900px) {
+  .container { flex-direction: column; }
+  .car { height: 50vh; }
+  .car:hover { height: 60vh; }
+  .overlay { font-size: 1.2rem; left: 20px; top: 20px; padding: 8px 18px; }
+}
+
+/* ===== FADE ===== */
+.fade-out { animation: fadeOut 0.7s ease forwards; }
+@keyframes fadeOut { to { opacity: 0; transform: scale(1.05); } }
+
+/* ===== FOOTER ===== */
+footer {
+  margin-top: 40px;
+  background: rgba(0,0,0,0.85);
+  color: #999;
+  text-align: center;
+  line-height: 50px;
+  font-size: 0.9rem;
+  padding: 10px;
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(255,215,0,0.1);
+}

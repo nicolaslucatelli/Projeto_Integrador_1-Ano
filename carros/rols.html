@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro de Luxo - LuxCar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../CSS/rols.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+   
+</head>
+
+<body>
+
+    <header>
+        <h1>LuxCar</h1>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\nicolas.2902\OneDrive - Senac PR\Documentos\Projeto_integrador1°ano\index.html">Início</a></li>
+                <li><a href="../HTML/categorias.html">Categorias</a></li>
+                <li><a href="../HTML/perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="produto-container">
+            <div class="galeria">
+                <img id="imagem-principal" src="../img/r1.jpg" alt="Rolls-Royce Cullinan" class="imagem-principal">
+                <div class="miniaturas">
+                    <img src="../img/r1.jpg" alt="Imagem 1" onclick="trocarImagem(this)">
+                    <img src="../img/r2.jpg" alt="Imagem 2" onclick="trocarImagem(this)">
+                    <img src="../img/r3.jpg" alt="Imagem 3" onclick="trocarImagem(this)">
+                    <img src="../img/r4.jpg" alt="Imagem 4" onclick="trocarImagem(this)">
+                    <img src="../img/r5.jpg" alt="Imagem 5" onclick="trocarImagem(this)">
+                    <img src="../img/r6.jpg" alt="Imagem 6" onclick="trocarImagem(this)">
+                </div>
+            </div>
+
+            <div class="detalhes">
+                <div>
+                    <h1 class="titulo">Rolls-Royce Cullinan</h1>
+                    <p class="descricao">
+                        <strong>O Rolls-Royce Cullinan</strong> é o SUV mais luxuoso do mundo, combinando o máximo em conforto, sofisticação e potência. 
+                        Equipado com um motor V12 6.75 biturbo que entrega 571 cavalos de potência, o Cullinan acelera de 0 a 100 km/h em apenas 5,2 segundos. 
+                        Seu interior é um verdadeiro santuário de luxo, com acabamento artesanal em couro, madeira nobre e detalhes metálicos. 
+                        O sistema de tração integral e a suspensão inteligente garantem uma experiência de condução incomparável, tanto na cidade quanto fora dela.
+                    </p>
+
+                    <p class="preco">R$ 6.300.000,00</p>
+
+                    <div class="especificacoes">
+                        <li>Motor: V12 6.75 biturbo</li>
+                        <li>Aceleração (0-100 km/h): 5,2 segundos</li>
+                        <li>Velocidade máxima: 250 km/h (limitada eletronicamente)</li>
+                        <li>Tração: Integral (AWD)</li>
+                        <li>Transmissão: Automática de 8 marchas</li>
+                        <li>Potência: 571 cavalos</li>
+                    </div>
+                </div>
+
+                <div class="botoes">
+                    <button onclick="window.location.href='../HTML/Compra.html'" class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 LuxCar. Todos os direitos reservados.</p>
+        <p>Feito por Gustavo Satoshi & Nicolas Lucatelli</p>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-tiktok"></i>
+        <i class="bi bi-facebook"></i>
+    </footer>
+
+    <script src="../JavaScript/rols.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuxCars – Luxo Executivo</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/luxo-executivo.css">
+
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="lux-header">
+    <div class="logo"><span class="gold">Lux</span>Cars</div>
+    <nav id="navbar">
+      <a href="C:\Users\nicolas.2902\OneDrive - Senac PR\Documentos\Projeto_integrador1°ano\index.html">Início</a>
+      <a href="../HTML/categorias.html">Categorias</a>
+      <a href="../HTML/perfil.html">Perfil</a>
+      <a href="../HTML/login.html" id="loginLink">Entrar</a>
+      <a href="#" id="logoutLink" style="display:none;">Sair</a>
+    </nav>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <div class="main-content">
+    <div class="container">
+      <div class="car rolls" onclick="redirectWithFade('rols.html')">
+        <div class="overlay">Rolls-Royce</div>
+      </div>
+      <div class="car bentley" onclick="redirectWithFade('benty.html')">
+        <div class="overlay">Bentley</div>
+      </div>
+      <div class="car bmw" onclick="redirectWithFade('bmw.html')">
+        <div class="overlay">BMW</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>© 2025 <span class="gold">LuxCars</span></footer>
+
+  <script src="../JavaScript/luxo-executivo.js"></script>
+</body>
+</html>

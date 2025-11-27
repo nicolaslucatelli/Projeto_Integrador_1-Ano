@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro de Luxo - LuxCar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../CSS/benty.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>LuxCar</h1>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\nicolas.2902\OneDrive - Senac PR\Documentos\Projeto_integrador1°ano\index.html">Início</a></li>
+                <li><a href="../HTML/categorias.html">Categorias</a></li>
+                <li><a href="../HTML/perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="produto-container">
+            <div class="galeria">
+                <img id="imagem-principal" src="../img/bw1.jpg" alt="Bentley Continental GT" class="imagem-principal">
+                <div class="miniaturas">
+                    <img src="../img/bw1.jpg" alt="Imagem 1" onclick="trocarImagem(this)">
+                    <img src="../img/bw2.jpg" alt="Imagem 2" onclick="trocarImagem(this)">
+                    <img src="../img/bw3.jpg" alt="Imagem 3" onclick="trocarImagem(this)">
+                    <img src="../img/bw4.jpg" alt="Imagem 4" onclick="trocarImagem(this)">
+                    <img src="../img/bw5.jpg" alt="Imagem 5" onclick="trocarImagem(this)">
+                    <img src="../img/bw6.jpg" alt="Imagem 6" onclick="trocarImagem(this)">
+                </div>
+            </div>
+
+            <div class="detalhes">
+                <div>
+                    <h1 class="titulo">Bentley Continental GT</h1>
+                    <p class="descricao">
+                        <strong>O Bentley Continental GT</strong> é o auge do luxo britânico e da engenharia de alta performance. 
+                        Equipado com um poderoso motor W12 6.0 biturbo que entrega impressionantes 659 cavalos, 
+                        o Continental GT acelera de 0 a 100 km/h em apenas 3,6 segundos e alcança 335 km/h de velocidade máxima. 
+                        Seu interior é um verdadeiro espetáculo de requinte, com couro artesanal, madeira nobre e tecnologia de ponta. 
+                        É o carro ideal para quem busca conforto absoluto aliado à performance de um superesportivo.
+                    </p>
+
+                    <p class="preco">R$ 3.800.000,00</p>
+
+                    <div class="especificacoes">
+                        <li>Motor: W12 6.0 biturbo</li>
+                        <li>Aceleração (0-100 km/h): 3,6 segundos</li>
+                        <li>Velocidade máxima: 335 km/h</li>
+                        <li>Tração: Integral (AWD)</li>
+                        <li>Transmissão: Automática de 8 marchas</li>
+                        <li>Potência: 659 cavalos</li>
+                    </div>
+                </div>
+
+                <div class="botoes">
+                    <button onclick="window.location.href='../HTML/Compra.html'" class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 LuxCar. Todos os direitos reservados.</p>
+        <p>Feito por Gustavo Satoshi & Nicolas Lucatelli</p>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-tiktok"></i>
+        <i class="bi bi-facebook"></i>
+    </footer>
+
+    <script src="../JavaScript/benty.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro de Luxo - LuxCar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../CSS/lamborguini.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+    <!-- ======= CABEÇALHO ======= -->
+    <header>
+        <h1>LuxCar</h1>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\nicolas.2902\OneDrive - Senac PR\Documentos\Projeto_integrador1°ano\index.html">Início</a></li>
+                <li><a href="../HTML/categorias.html">Categorias</a></li>
+                <li><a href="../HTML/perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ======= CONTEÚDO PRINCIPAL ======= -->
+    <main>
+        <div class="produto-container">
+            <!-- Galeria -->
+            <div class="galeria">
+                <img id="imagem-principal"
+                    src="../img/l1.jpg"
+                    alt="Carro de luxo" class="imagem-principal">
+                <div class="miniaturas">
+                    <img src="../img/l1.jpg" alt="Imagem 1" onclick="trocarImagem(this)">
+                    <img src="../img/l2.jpg" alt="Imagem 2" onclick="trocarImagem(this)">
+                    <img src="../img/l3.jpg" alt="Imagem 3" onclick="trocarImagem(this)">
+                    <img src="../img/l4.jpg" alt="Imagem 4" onclick="trocarImagem(this)">
+                    <img src="../img/l5.jpg" alt="Imagem 5" onclick="trocarImagem(this)">
+                    <img src="../img/l6.jpg" alt="Imagem 6" onclick="trocarImagem(this)">
+                </div>
+            </div>
+
+            <!-- Detalhes -->
+            <div class="detalhes">
+                <div>
+                    <h1 class="titulo">Lamborghini Aventador</h1>
+                    <p class="descricao"><strong>A Lamborghini Aventador</strong> é o auge da engenharia italiana em
+                        desempenho e design. Equipada com um poderoso motor V12 6.5 aspirado de 780 cv, acelera de 0 a
+                        100 km/h em impressionantes 2,8 segundos e atinge velocidade máxima superior a 350 km/h.
+                        Seu design agressivo e aerodinâmico transmite potência, enquanto o interior combina materiais
+                        nobres, acabamento em fibra de carbono e tecnologia de última geração. É um superesportivo que
+                        representa luxo, exclusividade e emoção em cada detalhe.</p>
+
+                    <p class="preco">R$ 6.999.000,00</p>
+
+                    <div class="especificacoes">
+                        <li>Motor: V12 6.5 aspirado</li>
+                        <li>Aceleração (0-100 km/h): 2,8 segundos</li>
+                        <li>Velocidade máxima: 350 km/h</li>
+                        <li>Tração: Integral (AWD)</li>
+                        <li>Transmissão: Automática ISR de 7 marchas</li>
+                        <li>Potência: 780 cavalos</li>
+                    </div>
+                </div>
+
+                <div class="botoes">
+                    <button onclick="window.location.href='../HTML/Compra.html'" class="btn-comprar">Comprar Agora</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ======= RODAPÉ ======= -->
+    <footer>
+        <p>&copy; 2025 LuxCar. Todos os direitos reservados.</p>
+        <p>Feito por Gustavo Satoshi & Nicolas Lucatelli</p>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-tiktok"></i>
+        <i class="bi bi-facebook"></i>
+    </footer>
+
+    <script src="../JavaScript/lamborguini.js"></script>
+</body>
+
+</html>

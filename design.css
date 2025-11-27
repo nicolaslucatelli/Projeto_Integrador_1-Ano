@@ -1,0 +1,341 @@
+/* ===== FONTES ===== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap');
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== TEMA ===== */
+body {
+  background-color: #0d0d0d;
+  color: #eee;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* ===== CORES ===== */
+.gold { color: #d4af37; }
+.gold-bg { background-color: #d4af37; color: #000; }
+
+.gold-btn {
+  background: linear-gradient(135deg, #d4af37, #b8870b);
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gold-btn:hover {
+  background: linear-gradient(135deg, #e7c766, #c19a18);
+  transform: scale(1.05);
+}
+
+/* ===== CABEÇALHO ===== */
+.lux-header {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(212,175,55,0.2);
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: url('https://images.unsplash.com/photo-1606813902773-32fae67c68b4?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #ccc;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.section-title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #d4af37;
+  margin-bottom: 40px;
+}
+
+/* ===== LISTA DE CARROS ===== */
+.carros {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.carro {
+  background-color: #141414;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(212,175,55,0.2);
+}
+
+.carro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(212,175,55,0.4);
+}
+
+.carro img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.carro-content {
+  padding: 15px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.carro-content h3 {
+  color: #d4af37;
+  font-size: 1.2rem;
+  margin-bottom: 9px;
+}
+
+.carro-content p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid rgba(212,175,55,0.2);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  .lux-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav a {
+    margin: 10px;
+    display: inline-block;
+  }
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+.detalhes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.detalhes-img img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(212,175,55,0.3);
+}
+
+.detalhes-info h2 {
+  color: #d4af37;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+.detalhes-info h3 {
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .detalhes-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  background: linear-gradient(to bottom right, #000, #1a1a1a);
+}
+
+.login-card {
+  background: #111;
+  border: 1px solid rgba(212,175,55,0.3);
+  border-radius: 15px;
+  padding: 40px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(212,175,55,0.2);
+}
+
+.login-card h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+.login-card input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(212,175,55,0.4);
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.msg {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+.perfil-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+
+.perfil-card {
+  background: #111;
+  border: 1px solid rgba(212,175,55,0.3);
+  border-radius: 15px;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(212,175,55,0.2);
+}
+
+.perfil-card img {
+  border-radius: 50%;
+  border: 3px solid #d4af37;
+  margin-bottom: 20px;
+}
+.botao {
+    display: inline-block;
+    padding: 7px 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background: linear-gradient(145deg, #000000, #1a1a1a);
+    color: #d4af37; /* dourado */
+    font-size: 1.1rem;
+    font-weight: 520;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+    text-decoration: none;
+  }
+
+  .botao:hover {
+    background: #d4af37;
+    color: #000;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+    transform: translateY(-2px);
+  }
+
+  .botao:active {
+    transform: translateY(1px);
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+  }
+
+ .containerx{
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+  margin-top: 175px;
+  margin-bottom: 225px;
+ }
+  .containerz{
+  width: 90%;
+  max-width: 100px;
+  margin: 60px auto;
+  
+ }
+ a {
+    display: inline-block;
+    padding: 7px 28px;
+    margin-top: -30px;
+    margin-bottom: -30px;
+    background: linear-gradient(145deg, #000000, #1a1a1a);
+    color: #d4af37; /* dourado */
+    font-size: 1.1rem;
+    font-weight: 520;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid #d4af37;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+    text-decoration: none;
+  }
+
+  a:hover {
+    background: #d4af37;
+    color: #000;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+    transform: translateY(-2px);
+  }
+a:active {
+    transform: translateY(1px);
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+  }

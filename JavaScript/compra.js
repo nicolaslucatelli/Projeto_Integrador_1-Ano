@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Delay de 1 segundo antes do redirecionamento
     setTimeout(() => {
-      window.location.href = "index.html"; // redireciona
+      window.location.href = "../index.html"; // redireciona
     }, 3000);
   });
 });
